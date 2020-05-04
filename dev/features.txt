@@ -1,0 +1,69 @@
+Features: For each feature you implement, move to the Implemented section and
+explain who did it (utorid) and how you did it. You can consider these as
+almost user stories, if you just add a bit to them. Add more features/user stories at the bottom.
+Move them up when completed.
+
+------------------------------------------------------------------------------------
+Implemented:
+1) User Registration
+   Done by: tovkyle
+   Explanation: Created a transition from login state, registration page created using
+   template of login page, created a query to check if userid already exists, as well as
+   a query to store the data to the database, created a model to handle these queries.
+
+2) 15 Puzzle
+   Done by: tovkyle
+   Explanation: Created transitions from all pages with a nav bar, created a model
+   to handle the mechanics of the game. Named images based on their number for the
+   creation of the board, where "0.gif" represents the empty space.
+
+3) Guess Game
+   Done by: tovkyle
+   Explanation: Created transitions from all pages with a nav bar, created a model
+   to handle the mechanics of the game. Used a similar format done in tutorial and made
+   adjustments as needed to connect it with the controller and the view.
+
+4) Sudoku
+   Done by: mockryan
+   Explanation: Created game state, how it is randomized when created. Each move is
+   increasing the number of the cell until each number on each row,column and quadrant is
+   distinct.
+
+5) Game stats
+   Done by: tovkyle
+   Explanation: Created transitions from login state and all pages with a nav bar,
+   created game stats page using template of unavailable page, created a query to get the
+   game stats data from the database, created a model to handle this query.
+
+6) Frog Puzzle
+   Done by: tovkyle
+   Explanation: Created a transition from all pages with a nav bar, created a model
+   to handle the mechanics of the game. Similar to 15 Puzzle.
+
+7) User Profile
+   Done by: tovkyle and mockryan
+   Explanation: Created transitions from all pages with a nav bar, created a model which
+   stores information of the user for displaying and identification purposes. Added
+   additional input fields for users to personalize their profile.
+
+8) Current Page Indicator
+   Done by: tovkyle
+   Explanation: Slight modifications to CSS, changes the background color and text
+   color of the button on the nav bar when hovered, color is fixed depending on the
+   current state's view for its respective button.
+
+9) Header with a memorable Name
+   Done by: mockryan
+   Explanation: Draw up a title page and paste it on all the pages so that
+   people have a visual clue on the website that they are on.
+
+------------------------------------------------------------------------------------
+0) Login
+   Done by: arnold
+   Explanation: created schema, including appuser table, populated with
+   default user. Also created handler for login state as well as login page.
+
+------------------------------------------------------------------------------------
+Unimplemented:
+
+------------------------------------------------------------------------------------

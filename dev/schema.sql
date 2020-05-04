@@ -1,0 +1,31 @@
+drop table appuser cascade;
+drop table userprofile cascade;
+drop table gamestats cascade;
+
+create table appuser (
+	userid varchar(50) primary key,
+	password varchar
+);
+
+create table userprofile (
+	userid varchar(50) primary key,
+	password varchar,
+	fname varchar(50),
+	lname varchar(50),
+	gender varchar(50),
+	age integer,
+	bio varchar(250),
+	foreign key(userid) references appuser(userid)
+);
+
+create table gamestats (
+	userid varchar(50),
+	game varchar(50),
+	nummoves integer,
+	primary key(userid, game),
+	foreign key(userid) references userprofile(userid)
+);
+
+insert into appuser values('auser', digest('apassword', 'SHA256'));
+insert into userprofile values('auser', digest('apassword', 'SHA256'));
+
